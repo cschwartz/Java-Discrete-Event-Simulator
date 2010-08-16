@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.047" errors="0" skipped="0" tests="1" name="org.jdes.simulator.SimulatorTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Programme\Java\jdk1.6.0_15\jre\bin"/>
+    <property name="java.vm.version" value="14.1-b02"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 3"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Dokumente und Einstellungen\blair\workspace\org.jdes"/>
+    <property name="java.runtime.version" value="1.6.0_15-b03"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\Dokumente und Einstellungen\blair\workspace\org.jdes"/>
+    <property name="java.endorsed.dirs" value="C:\Programme\Java\jdk1.6.0_15\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="surefire.real.class.path" value="C:\DOKUME~1\blair\LOKALE~1\Temp\surefirebooter2597074917764136568.jar"/>
+    <property name="java.io.tmpdir" value="C:\DOKUME~1\blair\LOKALE~1\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows XP"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Programme\Java\jdk1.6.0_15\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Programme\MiKTeX 2.8\miktex\bin;C:\Perl\site\bin;C:\Perl\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Programme\TortoiseSVN\bin;C:\Programme\ATI Technologies\ATI.ACE\Core-Static;C:\Programme\ant\bin;C:\android\android-sdk-windows-1.0_r2\tools;C:\Programme\Perforce;C:\Programme\MATLAB\R2007b\bin;C:\Programme\MATLAB\R2007b\bin\win32;C:\Programme\GNU\GnuPG\pub;C:\Programme\QuickTime\QTSystem\;C:\Programme\CMake 2.8\bin;C:\Programme\jEdit;C:\WINDOWS\System32;C:\Python26;C:\Python26\DLLs;C:\Python26\Scripts;C:\Python26\Lib\site-packages\PyQt4;C:\Python26\Lib\site-packages\vtk;C:\Programme\apache-maven-2.2.1\bin;C:\Programme\gs\gs8.64\bin"/>
+    <property name="surefire.test.class.path" value="C:\Dokumente und Einstellungen\blair\workspace\org.jdes\target\test-classes;C:\Dokumente und Einstellungen\blair\workspace\org.jdes\target\classes;C:\Dokumente und Einstellungen\blair\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="5.1"/>
+    <property name="user.home" value="C:\Dokumente und Einstellungen\blair"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="blair"/>
+    <property name="java.class.path" value="C:\Dokumente und Einstellungen\blair\workspace\org.jdes\target\test-classes;C:\Dokumente und Einstellungen\blair\workspace\org.jdes\target\classes;C:\Dokumente und Einstellungen\blair\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Programme\Java\jdk1.6.0_15\jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="de"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.6.0_15"/>
+    <property name="java.ext.dirs" value="C:\Programme\Java\jdk1.6.0_15\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Programme\Java\jdk1.6.0_15\jre\lib\resources.jar;C:\Programme\Java\jdk1.6.0_15\jre\lib\rt.jar;C:\Programme\Java\jdk1.6.0_15\jre\lib\sunrsasign.jar;C:\Programme\Java\jdk1.6.0_15\jre\lib\jsse.jar;C:\Programme\Java\jdk1.6.0_15\jre\lib\jce.jar;C:\Programme\Java\jdk1.6.0_15\jre\lib\charsets.jar;C:\Programme\Java\jdk1.6.0_15\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="C:\Dokumente und Einstellungen\blair\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.016" classname="org.jdes.simulator.SimulatorTest" name="testApp"/>
+</testsuite>

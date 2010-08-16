@@ -1,38 +1,39 @@
 package org.jdes.simulator;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.*;
+
+import org.jdes.event.StopSimulationEvent;
+import org.jdes.event.factory.StopSimulationEventFactory;
+import org.jdes.guice.SimulatorModule;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 
 /**
  * Unit test for the main simulator class.
  */
-public class SimulatorTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public SimulatorTest( String testName )
-    {
-        super( testName );
+public class SimulatorTest {
+    Injector injector;
+
+    @Before
+    public void setup() {
+        SimulatorModule module = new SimulatorModule();
+        injector = Guice.createInjector(module);
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( SimulatorTest.class );
-    }
+    @Test
+    public void simulatorStops() {
+        Simulator simulator = injector.getInstance(Simulator.class);
+        StopSimulationEventFactory factory = injector
+                .getInstance(StopSimulationEventFactory.class);
+        StopSimulationEvent event = factory.create(5.0);
+        simulator.addEvent(event);
+        event = factory.create(10.0);
+        simulator.addEvent(event);
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        simulator.run();
+        assertEquals(simulator.getCurrentTime(), 5.0);
     }
 }
