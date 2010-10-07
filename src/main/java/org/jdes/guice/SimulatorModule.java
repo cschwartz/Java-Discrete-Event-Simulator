@@ -26,8 +26,8 @@ public class SimulatorModule implements com.google.inject.Module {
 
         binder.bind(MeanCounter.class).to(MeanCounterImpl.class);
 
-        binder.bind(Simulator.class).to(SimulatorImpl.class)
-                .in(Singleton.class);
+        binder.bind(Simulator.class).to(SimulatorImpl.class);
+        binder.bind(SimulatorImpl.class).in(Singleton.class);
 
         binder.bind(StopSimulationEventFactory.class).toProvider(
                 FactoryProvider.newFactory(StopSimulationEventFactory.class,
