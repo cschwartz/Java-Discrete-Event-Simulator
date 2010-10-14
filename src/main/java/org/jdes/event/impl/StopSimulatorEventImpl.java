@@ -30,8 +30,8 @@ public class StopSimulatorEventImpl extends AbstractEvent implements
      */
     @Inject
     public StopSimulatorEventImpl(final SimulatorImpl newSimulator,
-            @Assisted final double timeToStop) {
-        super(timeToStop);
+            @Assisted("timeToStop") final double timeToStop) {
+        super(newSimulator, timeToStop);
         this.simulator = newSimulator;
     }
 

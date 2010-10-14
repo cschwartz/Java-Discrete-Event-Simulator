@@ -29,4 +29,11 @@ public interface Simulator {
      * @return The current simulation time.
      */
     double getCurrentTime();
+
+    /**
+     * Returns the next event id to be used for a new event.
+     * 
+     * @return The next event id
+     */
+	long getNextEventId();
 }

@@ -17,6 +17,12 @@ public interface Event extends Comparable<Event> {
     double getTimeOfOccurence();
 
     /**
+     * Returns the events simulation-unique id.
+     * @return The event id.
+     */
+    long getId();
+    
+    /**
      * Execute the event.
      */
     void execute();

@@ -1,11 +1,14 @@
 package org.jdes.simulator.impl;
 
-import java.lang.annotation.Inherited;
 import java.util.PriorityQueue;
 
 import org.jdes.event.Event;
 import org.jdes.event.StopSimulationEvent;
+import org.jdes.guice.InjectLogger;
 import org.jdes.simulator.Simulator;
+import org.slf4j.Logger;
+
+import com.google.inject.Inject;
 
 /**
  * The default implementation of the {@link Simulator} interface.
@@ -35,18 +38,29 @@ public class SimulatorImpl implements Simulator {
     protected boolean stop = false;
 
     /**
+     * The next event id.
+     */
+    protected long nextEventId = 0;
+
+    /**
      * {@inheritDoc}
      */
     @Override
     public void run() {
+    	logger.info("Starting Simulation.");
+    	
         Event event = nextEvent();
         while (event != null && !stop) {
             currentTime = event.getTimeOfOccurence();
             event.execute();
             event = nextEvent();
         }
+        
+        logger.info("Simulation stopped at {}.", currentTime);
     }
 
+    @InjectLogger protected Logger logger;
+    
     /**
      * Fetch the {@link Event} closest to the <code>currentTime</code>.
      * @return The next event to process.
@@ -76,5 +90,12 @@ public class SimulatorImpl implements Simulator {
      */
     public void stop() {
         this.stop = true;
+    }
+    
+    @Override
+	public long getNextEventId() {
+    	long newEventId = nextEventId;
+    	nextEventId += 1;
+    	return newEventId;
     }
 }

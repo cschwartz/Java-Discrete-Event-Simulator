@@ -36,4 +36,10 @@ public class SimulatorTest {
         simulator.run();
         assertEquals(simulator.getCurrentTime(), 5.0);
     }
+    
+    @Test
+    public void testSimulanusEvents() {
+        
+        
+    }
 }
